@@ -59,8 +59,8 @@ while True:
 
 
 def bill(person):
-    tax_tip_total = person + (person*0.15 + person*0.05)
-    tax_tip_bob_total = tax_tip_total+(bob/7)
+    tax_tip_total = person + (person*0.20)
+    tax_tip_bob_total = tax_tip_total+(bob*1.20/7)
     #Tax is 5% and tip is 15% - add amount + 15% + 5%, then divide by 7
     return tax_tip_bob_total
 
