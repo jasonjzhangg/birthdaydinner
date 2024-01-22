@@ -1,0 +1,82 @@
+
+while True:
+    try:
+        person1 = int(input("Please input Person 1's total before tax and tip in dollars.\n"))
+        break
+# if valid input, then break out of the loop
+    except ValueError:
+        print("That is not a valid number.")
+        #if invalid, re-loop back to original question
+
+while True:
+    try:
+        person2 = int(input("Please input Person 2's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+while True:
+    try:
+        person3 = int(input("Please input Person 3's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+while True:
+    try:
+        person4 = int(input("Please input Person 4's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+while True:
+    try:
+        person5 = int(input("Please input Person 5's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+while True:
+    try:
+        person6 = int(input("Please input Person 6's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+while True:
+    try:
+        person8 = int(input("Please input Person 8's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+while True:
+    try:
+        bob = int(input("Please input Bob's total before tax and tip.\n"))
+        break
+    except ValueError:
+        print("That is not a valid number.")
+
+
+def bill(person):
+    tax_tip_total = person + (person*0.15 + person*0.05)
+    tax_tip_bob_total = tax_tip_total+(bob/7)
+    #Tax is 5% and tip is 15% - add amount + 15% + 5%, then divide by 7
+    return tax_tip_bob_total
+
+    #return back from function
+
+print(f"Person 1's final bill is: "+ "${:,.2f}".format(bill(person1)))
+ 
+print(f"Person 2's final bill is: "+ "${:,.2f}".format(bill(person2)))
+ 
+print(f"Person 3's final bill is: "+ "${:,.2f}".format(bill(person3)))
+ 
+print(f"Person 4's final bill is: "+ "${:,.2f}".format(bill(person4)))
+ 
+print(f"Person 5's final bill is: "+ "${:,.2f}".format(bill(person5)))
+ 
+print(f"Person 6's final bill is: "+ "${:,.2f}".format(bill(person6)))
+ 
+print(f"Person 8's final bill is: "+ "${:,.2f}".format(bill(person8)))
+ 
